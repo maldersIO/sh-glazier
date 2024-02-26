@@ -1,4 +1,4 @@
-add_filter( 'woocommerce_package_rates', 'fs_add_extra_cost_based_on_shipping_class', 10, 2);
+<?php add_filter( 'woocommerce_package_rates', 'fs_add_extra_cost_based_on_shipping_class', 10, 2);
 
 if( ! function_exists('fs_add_extra_cost_based_on_shipping_class') ) {
 		
@@ -170,3 +170,4 @@ function fs_add_extra_cost_based_on_shipping_class( $shipping_rates, $package ){
 }
 	
 }
+
